@@ -19,11 +19,11 @@ Mini-application full stack pour créer des pages publiques de tracks musicales 
 - Tracker les clics plateforme
 - Afficher un rapport analytics avec tableaux et graphiques
 
-<img width="1907" height="1048" alt="Screenshot_20260606_202101" src="https://github.com/user-attachments/assets/e0f0b5e1-16f0-407a-bd2b-8d7689fa7fbf" />
-<img width="1907" height="1048" alt="Screenshot_20260606_202057" src="https://github.com/user-attachments/assets/7d50d97c-4110-44be-b863-6c7861e0011a" />
-<img width="1907" height="1048" alt="Screenshot_20260606_202044" src="https://github.com/user-attachments/assets/94351307-6dda-4344-8c52-059f33c60028" />
-<img width="1907" height="1048" alt="Screenshot_20260606_202027" src="https://github.com/user-attachments/assets/010ecdc9-1c40-4e68-9c65-48abd0bad416" />
 <img width="1907" height="1048" alt="Screenshot_20260606_202014" src="https://github.com/user-attachments/assets/0c5e346c-64a5-4b9d-99c6-474c5f32b279" />
+<img width="1907" height="1048" alt="Screenshot_20260606_202027" src="https://github.com/user-attachments/assets/010ecdc9-1c40-4e68-9c65-48abd0bad416" />
+<img width="1907" height="1048" alt="Screenshot_20260606_202044" src="https://github.com/user-attachments/assets/94351307-6dda-4344-8c52-059f33c60028" />
+<img width="1907" height="1048" alt="Screenshot_20260606_202057" src="https://github.com/user-attachments/assets/7d50d97c-4110-44be-b863-6c7861e0011a" />
+<img width="1907" height="1048" alt="Screenshot_20260606_202101" src="https://github.com/user-attachments/assets/e0f0b5e1-16f0-407a-bd2b-8d7689fa7fbf" />
 
 ## Installation
 
