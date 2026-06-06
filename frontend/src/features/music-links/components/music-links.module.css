@@ -1,0 +1,352 @@
+.hero {
+    padding: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 24px 70px rgba(31, 27, 22, 0.1);
+    backdrop-filter: blur(24px);
+}
+
+.heroCopy {
+    max-width: 700px;
+}
+
+.heroTitle {
+    max-width: 680px;
+    font-size: clamp(2.45rem, 5vw, 4.7rem);
+    font-weight: 550;
+    line-height: 0.98;
+    letter-spacing: -0.065em;
+}
+
+.heroSubtitle {
+    max-width: 590px;
+    margin-top: 20px;
+    color: rgba(23, 23, 23, 0.68);
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.createButton {
+    flex: 0 0 auto;
+    box-shadow: 0 12px 28px rgba(17, 17, 17, 0.18);
+    transition:
+        transform 220ms ease,
+        box-shadow 220ms ease,
+        background-color 220ms ease;
+}
+
+.createButton:hover {
+    background: #3630a3;
+    box-shadow: 0 16px 36px rgba(54, 48, 163, 0.32);
+    transform: translateY(-3px) scale(1.02);
+}
+
+.heroStat {
+    padding: 18px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.34);
+    box-shadow: 0 0 0 rgba(31, 27, 22, 0);
+    transform: translateY(0);
+    transition:
+        transform 220ms ease,
+        background-color 220ms ease,
+        box-shadow 220ms ease,
+        border-color 220ms ease;
+}
+
+.heroStat:hover {
+    border-color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.58);
+    box-shadow: 0 14px 34px rgba(31, 27, 22, 0.1);
+    transform: translateY(-4px);
+}
+
+.heroStatValue {
+    font-size: 1.65rem;
+    font-weight: 650;
+    letter-spacing: -0.04em;
+}
+
+.heroStatLabel,
+.sectionKicker {
+    color: rgba(23, 23, 23, 0.58);
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.library {
+    padding-bottom: 36px;
+}
+
+.sectionTitle {
+    margin-top: 3px;
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    letter-spacing: -0.045em;
+}
+
+.emptyState {
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    background: rgba(255, 255, 255, 0.56);
+    backdrop-filter: blur(18px);
+}
+
+.musicCard {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    border-radius: 24px;
+    background: rgba(250, 249, 246, 0.76);
+    box-shadow: 0 18px 50px rgba(31, 27, 22, 0.1);
+    backdrop-filter: blur(20px);
+    transform: translateY(0);
+    transition:
+        transform 260ms ease,
+        box-shadow 260ms ease,
+        border-color 260ms ease;
+}
+
+.musicCard:hover,
+.musicCard:focus-within,
+.musicCardActive {
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 24px 65px rgba(31, 27, 22, 0.16);
+    transform: translateY(-5px);
+}
+
+.cardCoverWrap {
+    position: relative;
+    aspect-ratio: 1.5 / 1;
+    overflow: hidden;
+}
+
+.cardCover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.musicCard:hover .cardCover,
+.musicCard:focus-within .cardCover {
+    transform: scale(1.055);
+}
+
+.cardCoverOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.5));
+}
+
+.cardDate {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.cardBody {
+    display: flex;
+    min-height: 228px;
+    flex-direction: column;
+    gap: 22px;
+    padding: 22px;
+}
+
+.cardTitle {
+    overflow: hidden;
+    font-size: 1.45rem;
+    letter-spacing: -0.04em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cardArtist {
+    margin-top: 3px;
+    color: rgba(23, 23, 23, 0.6);
+}
+
+.cardMetrics {
+    color: rgba(23, 23, 23, 0.62);
+}
+
+.cardPrimaryAction {
+    min-width: 110px;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        background-color 180ms ease;
+}
+
+.cardPrimaryAction:hover {
+    background: #3630a3;
+    box-shadow: 0 9px 22px rgba(54, 48, 163, 0.34);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.cardAnalyticsAction {
+    color: #4c35b5;
+    background: rgba(108, 77, 220, 0.12);
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.cardAnalyticsAction:hover {
+    color: #ffffff;
+    background: #6c4ddc;
+    box-shadow: 0 8px 20px rgba(108, 77, 220, 0.28);
+    transform: translateY(-2px);
+}
+
+.create {
+    padding: 4px 8px 12px;
+}
+
+.create h2 {
+    letter-spacing: -0.04em;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 260px;
+}
+
+.searchInput input {
+    border-color: rgba(23, 23, 23, 0.12);
+    background: rgba(255, 255, 255, 0.74);
+}
+
+.searchInput input:focus {
+    border-color: rgba(108, 77, 220, 0.68);
+    box-shadow: 0 0 0 3px rgba(108, 77, 220, 0.08);
+}
+
+.trackResult {
+    border-color: rgba(23, 23, 23, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: none;
+    transition:
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.trackResult:hover {
+    border-color: rgba(23, 23, 23, 0.18);
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.selectedTrack {
+    border-color: rgba(108, 77, 220, 0.46);
+    background: rgba(108, 77, 220, 0.07);
+    box-shadow: 0 0 0 3px rgba(108, 77, 220, 0.08);
+}
+
+.trackInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.selectTrackButton {
+    width: fit-content;
+    color: #4a4a4a;
+    background: #e4e4e4;
+}
+
+.selectTrackButton:hover {
+    color: #252525;
+    background: #d5d5d5;
+}
+
+.selectedTrackSummary {
+    border: 1px solid rgba(108, 77, 220, 0.2);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(108, 77, 220, 0.1),
+            rgba(255, 255, 255, 0.72) 52%
+        ),
+        rgba(250, 249, 246, 0.88);
+    box-shadow: 0 18px 46px rgba(31, 27, 22, 0.1);
+}
+
+.summaryTitle {
+    font-size: 1.05rem;
+    letter-spacing: -0.025em;
+}
+
+.summaryArtist {
+    margin-top: 3px;
+    color: rgba(23, 23, 23, 0.58);
+}
+
+.sourceBadge {
+    flex: 0 0 auto;
+    text-transform: none;
+}
+
+.platformBadge {
+    border: 1px solid rgba(108, 77, 220, 0.12);
+    color: #4c35b5;
+    background: rgba(108, 77, 220, 0.1);
+    text-transform: none;
+}
+
+.generateButton {
+    background: #5e43c6;
+    box-shadow: 0 10px 24px rgba(94, 67, 198, 0.24);
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.generateButton:hover {
+    background: #4c35b5;
+    box-shadow: 0 14px 30px rgba(76, 53, 181, 0.3);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+    .hero {
+        padding: 26px;
+        border-radius: 22px;
+    }
+
+    .heroTitle {
+        letter-spacing: -0.055em;
+    }
+
+    .createButton {
+        width: 100%;
+    }
+
+    .selectedTrackSummary > div:first-child {
+        align-items: flex-start;
+    }
+
+    .sourceBadge {
+        max-width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .musicCard,
+    .cardCover,
+    .heroStat,
+    .createButton,
+    .cardPrimaryAction,
+    .cardAnalyticsAction,
+    .generateButton {
+        transition: none;
+    }
+}

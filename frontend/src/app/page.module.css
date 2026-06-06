@@ -1,0 +1,76 @@
+.page {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 28px;
+    color: #171717;
+    background: #c9c5bd;
+}
+
+.backgrounds {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.background {
+    position: absolute;
+    inset: -8%;
+    opacity: 0;
+    background-position: center;
+    background-size: cover;
+    filter: blur(43px) saturate(1.35) contrast(1.06);
+    transform: scale(1.1);
+    transition: opacity 600ms ease;
+}
+
+.backgroundActive {
+    opacity: 0.88;
+}
+
+.backgroundShade {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(244, 241, 235, 0.18),
+            rgba(229, 225, 217, 0.52) 78%,
+            rgba(218, 214, 206, 0.76)
+        ),
+        rgba(225, 221, 213, 0.1);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: min(1240px, 100%);
+    margin: 0 auto;
+}
+
+.modal {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    background: rgba(250, 249, 246, 0.96);
+    box-shadow: 0 30px 100px rgba(17, 17, 17, 0.22);
+}
+
+.modalHeader {
+    background: transparent;
+}
+
+.modalBody {
+    max-height: calc(90vh - 68px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+@media (max-width: 720px) {
+    .page {
+        padding: 16px;
+    }
+}
